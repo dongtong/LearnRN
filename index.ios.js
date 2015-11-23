@@ -7,9 +7,15 @@ import React from 'react-native';
 //var React = require('react-native');
 import {DayItem} from './src/components/day_item';
 import {StyleDayItem} from './src/components/style_day_item';
+import {SlidingBox} from './src/components/SlidingBox/sliding_box';
+import {FlexLayout} from './src/components/flex_layout';
+import {NavigatorView} from './src/components/navigator_view';
+import {CheckboxList} from './src/components/checkbox_list';
 //http://momentjs.com/
 import Moment from 'moment';
 //var Moment = require('moment');
+//------------------------------------
+
 
 let {
   AppRegistry,
@@ -82,6 +88,16 @@ let Weekday = React.createClass({
 //     }
 // });
 
+var App = React.createClass({
+    render: function(){
+      return (
+        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+          <CheckboxList />
+        </View>
+      );
+    }
+});
+
 let styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -91,4 +107,4 @@ let styles = StyleSheet.create({
 });
 
 //这里为什么必须是LearnRN?
-AppRegistry.registerComponent('LearnRN', () => Weekday);
+AppRegistry.registerComponent('LearnRN', () => App);

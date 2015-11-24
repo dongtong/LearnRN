@@ -11,6 +11,7 @@ import {SlidingBox} from './src/components/SlidingBox/sliding_box';
 import {FlexLayout} from './src/components/flex_layout';
 import {NavigatorView} from './src/components/navigator_view';
 import {CheckboxList} from './src/components/checkbox_list';
+import {TapTime} from './src/components/tap_time';
 //http://momentjs.com/
 import Moment from 'moment';
 //var Moment = require('moment');
@@ -91,9 +92,7 @@ let Weekday = React.createClass({
 var App = React.createClass({
     render: function(){
       return (
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <CheckboxList />
-        </View>
+        <TapTime />
       );
     }
 });

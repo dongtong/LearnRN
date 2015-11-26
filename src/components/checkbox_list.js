@@ -18,7 +18,10 @@ var styles = StyleSheet.create({
       paddingRight: 10,
       flex: 1,
       flexDirection: 'row',
-      alignItems: 'flex-start'
+      alignItems: 'flex-start',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      alignItems: 'center'
     },
     chkItem: {
       margin: 4,
@@ -78,6 +81,7 @@ class CheckboxList extends Component {
           <CheckboxItem chkText="Backbone"/>
           <CheckboxItem chkText="Ember"/>
           <CheckboxItem chkText="Metor"/>
+          <CheckboxItem chkText="VUE"/>
         </View>
       );
     }

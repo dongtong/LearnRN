@@ -92,7 +92,7 @@ let Weekday = React.createClass({
 var App = React.createClass({
     render: function(){
       return (
-        <TapTime />
+        <CheckboxList />
       );
     }
 });
